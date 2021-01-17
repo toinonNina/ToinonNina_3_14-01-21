@@ -1,0 +1,19 @@
+body {
+  width: auto;
+  margin: 0;
+  font-size: 1em;
+  font-family: "Roboto", sans-serif;
+}
+a {
+  @include link;
+}
+h2 {
+  padding-left: 10px;
+}
+h3,
+p {
+  margin: 0;
+}
+.fas {
+  color: $dark-grey;
+}
