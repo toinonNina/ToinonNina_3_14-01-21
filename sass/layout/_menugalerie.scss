@@ -1,0 +1,40 @@
+.restaurant {
+  background-color: $background;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  &__flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  &__photo {
+    @include card;
+  }
+
+  &__photo--large {
+    @include photo;
+  }
+
+  #new {
+    @include Btnnew(200px, 120px);
+  }
+  #new1 {
+    @include Btnnew(200px, 120px);
+  }
+
+  .text {
+    @include text;
+    justify-content: space-between;
+  }
+
+  .block {
+    position: relative;
+  }
+
+  .fa-heart {
+    font-size: 25px;
+    justify-content: space-between;
+    vertical-align: middle;
+    margin-left: 20%;
+  }
+}

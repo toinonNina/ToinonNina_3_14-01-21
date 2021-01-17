@@ -1,0 +1,22 @@
+header {
+  display: flex;
+  flex-direction: column;
+  img {
+    padding: 20px 0 10px 0;
+  }
+
+  article {
+    text-align: center;
+    background-color: $background;
+    padding-bottom: 40px;
+    p {
+      padding-bottom: 30px;
+    }
+    h1 {
+      padding: 20px 40px 0 40px;
+    }
+    .gradient {
+      @include gradient;
+    }
+  }
+}

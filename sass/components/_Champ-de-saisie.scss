@@ -1,0 +1,30 @@
+.input-icon {
+  position: relative;
+  background-color: $color-grey;
+  z-index: 3;
+}
+.icone {
+  position: absolute; /*important*/
+  top: 16px;
+  left: 70px;
+  font-size: 15px;
+  width: 40px;
+  z-index: 1;
+  .dark {
+    color: black;
+  }
+}
+input[type="text"] {
+  background-color: $color-grey;
+  border: 0;
+  text-align: center;
+  height: 50px;
+  width: 100%;
+  box-shadow: inset 0px 2px 3px 0px darken($color-grey, 10%);
+
+  padding: 0;
+}
+input::placeholder {
+  color: black;
+  font-size: 1.2em;
+}

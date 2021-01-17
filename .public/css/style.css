@@ -1,0 +1,28 @@
+@charset "UTF-8";
+.input-icon {
+  position: relative;
+}
+
+.icone {
+  border: 1px solid black;
+  position: absolute;
+  /*important*/
+  top: 2px;
+  color: red;
+  /*Tu peux changer ici*/
+  left: 2px;
+  font-size: 21px;
+  /*Tu peux changer ici*/
+  width: 50px;
+}
+
+input[type=text] {
+  padding-left: 0px;
+  /*Laisse de l'espace pour l'icône*/
+}
+
+body {
+  background-color: green;
+}
+
+/*# sourceMappingURL=style.css.map */
