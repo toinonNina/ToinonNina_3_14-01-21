@@ -1,0 +1,48 @@
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  button {
+    border: 0;
+
+    padding: 10px 15px;
+    background-color: $white;
+
+    .fas {
+      font-size: 20px;
+      color: $black;
+    }
+  }
+  img {
+  }
+}
+#menu__main1 {
+  @include cardm(url(/public/images/restaurants/jay.jpg), contain, no-repeat);
+
+  section {
+    @include sectionm;
+  }
+}
+#menu__main2 {
+  @include cardm(url(/public/images/restaurants/stil.jpg), contain, no-repeat);
+
+  section {
+    @include sectionm;
+  }
+}
+#menu__main3 {
+  @include cardm(url(/public/images/restaurants/toa.jpg), contain, no-repeat);
+
+  section {
+    @include sectionm;
+  }
+}
+#menu__main4 {
+  @include cardm(url(/public/images/restaurants/louis.jpg), contain, no-repeat);
+
+  section {
+    @include sectionm;
+  }
+}
