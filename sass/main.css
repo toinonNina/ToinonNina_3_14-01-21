@@ -35,7 +35,7 @@ p {
   z-index: 5;
 
   pointer-events: none; /* retirer toute intéraction au clique sur l'élément*/
-/*& {
+/*  & {
     animation: space_spin 3000ms ease-in-out both; /* both pour que l'animation ne reaparait pas */
 /*   > .spinner {
       animation: spin 3000ms ease-in-out both;
@@ -71,38 +71,24 @@ p {
     opacity: 0;
     display: none;
   }
-}*/
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
-header img {
-  padding: 20px 0 10px 0;
-}
-header article {
-  text-align: center;
-  background-color: #f6f6f6;
-  padding-bottom: 30px;
-}
-header article h1 {
-  padding: 20px 40px 0 40px;
-}
-header article .gradient {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-  background: linear-gradient(#ff79da, #9356dc);
-  padding: 15px;
-  color: white;
-  border: 0px;
-  border-radius: 20px;
-  -webkit-box-shadow: 0px 3px 4px 2px #d1d1d1;
-          box-shadow: 0px 3px 4px 2px #d1d1d1;
+*/
+.fa-heart {
+  padding: 0.2em;
+  color: black;
 }
 
+/*.fa-heart::before {
+  transition: color 2s ease-in-out;
+  /*background: -webkit-linear-gradient($color-primaire, $color-secondaire); /* pour le dégradé de l'icone mais la transition ne prend pas dessus 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fa-heart:hover::before {
+  color: $color-primaire;
+  font-weight: bold;
+  cursor: pointer;
+}*/
 .input-icon {
   position: relative;
   background-color: #eaeaea;
@@ -160,8 +146,7 @@ input::placeholder {
 
 .steps__list {
   list-style: none;
-  padding-left: 20px;
-  padding-right: 10px;
+  padding: 10px 10px 25px 20px;
   counter-reset: repas;
   /* on initialise et nomme un compteur */
 }
@@ -201,9 +186,45 @@ input::placeholder {
   color: #9356dc;
 }
 
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+header img {
+  padding: 20px 0 10px 0;
+}
+header article {
+  text-align: center;
+  background-color: #f6f6f6;
+  padding-bottom: 40px;
+}
+header article p {
+  padding-bottom: 30px;
+}
+header article h1 {
+  padding: 20px 40px 0 40px;
+}
+header article .gradient {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da, #9356dc);
+  padding: 15px;
+  color: white;
+  border: 0px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 3px 4px 2px #d1d1d1;
+          box-shadow: 0px 3px 4px 2px #d1d1d1;
+  cursor: pointer;
+}
+
 .restaurant {
   background-color: #f6f6f6;
   padding-top: 10px;
+  padding-bottom: 40px;
 }
 .restaurant__flex {
   display: -webkit-box;
@@ -234,9 +255,9 @@ input::placeholder {
 }
 .restaurant #new {
   position: absolute;
-  z-index: 4;
-  left: 225px;
-  bottom: -220px;
+  z-index: 1;
+  left: 200px;
+  bottom: 120px;
   background-color: #99e2d0;
   color: #32b091;
   border: 0;
@@ -244,29 +265,9 @@ input::placeholder {
 }
 .restaurant #new1 {
   position: absolute;
-  z-index: 4;
-  left: 225px;
-  bottom: -490px;
-  background-color: #99e2d0;
-  color: #32b091;
-  border: 0;
-  padding: 5px 10px;
-}
-.restaurant #new2 {
-  position: absolute;
-  z-index: 4;
-  left: 225px;
-  bottom: -760px;
-  background-color: #99e2d0;
-  color: #32b091;
-  border: 0;
-  padding: 5px 10px;
-}
-.restaurant #new3 {
-  position: absolute;
-  z-index: 4;
-  left: 225px;
-  bottom: -1030px;
+  z-index: 1;
+  left: 200px;
+  bottom: 120px;
   background-color: #99e2d0;
   color: #32b091;
   border: 0;
@@ -289,6 +290,9 @@ input::placeholder {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.restaurant .block {
+  position: relative;
+}
 .restaurant .fa-heart {
   font-size: 25px;
   -webkit-box-pack: justify;
@@ -296,5 +300,35 @@ input::placeholder {
           justify-content: space-between;
   vertical-align: middle;
   margin-left: 20%;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 10px;
+}
+footer ul {
+  list-style: none;
+  margin-left: 6px;
+  padding-left: 0;
+}
+footer li {
+  margin-bottom: 10px;
+}
+footer a {
+  color: white;
+}
+footer h2 {
+  font-family: "Shrikhand", cursive;
+  font-size: 15px;
+  font-weight: 200;
+}
+footer .fas {
+  margin-right: 15px;
+  color: white;
+}
+
+header a {
+  padding: 10px;
 }
 /*# sourceMappingURL=main.css.map */

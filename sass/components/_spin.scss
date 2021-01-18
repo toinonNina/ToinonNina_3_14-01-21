@@ -1,4 +1,4 @@
-.loader {
+/*.loader {
   width: 100%;
   height: 100%;
   background-color: white;
@@ -8,9 +8,9 @@
   z-index: 5;
 
   pointer-events: none; /* retirer toute intéraction au clique sur l'élément*/
-  & {
+/*  & {
     animation: space_spin 3000ms ease-in-out both; /* both pour que l'animation ne reaparait pas */
-    > .spinner {
+/*   > .spinner {
       animation: spin 3000ms ease-in-out both;
     }
   }
@@ -45,3 +45,4 @@
     display: none;
   }
 }
+*/
