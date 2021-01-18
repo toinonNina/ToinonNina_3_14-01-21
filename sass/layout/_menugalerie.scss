@@ -23,18 +23,16 @@
   }
 
   .text {
+    border: 1px solid red;
     @include text;
-    justify-content: space-between;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
   }
 
   .block {
     position: relative;
-  }
-
-  .fa-heart {
-    font-size: 25px;
-    justify-content: space-between;
-    vertical-align: middle;
-    margin-left: 20%;
   }
 }
