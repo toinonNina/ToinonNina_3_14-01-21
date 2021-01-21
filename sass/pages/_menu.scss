@@ -1,48 +1,143 @@
-.menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-
-  button {
-    border: 0;
-
-    padding: 10px 15px;
-    background-color: $white;
-
-    .fas {
-      font-size: 20px;
-      color: $black;
-    }
-  }
-  img {
-  }
-}
 #menu__main1 {
   @include cardm(url(/public/images/restaurants/jay.jpg), contain, no-repeat);
-
+  h1 {
+    @include menuh1;
+  }
+  .fa-heart {
+    @include fapage;
+  }
   section {
     @include sectionm;
   }
 }
 #menu__main2 {
   @include cardm(url(/public/images/restaurants/stil.jpg), contain, no-repeat);
-
+  h1 {
+    @include menuh1;
+  }
+  .fa-heart {
+    @include fapage;
+  }
   section {
     @include sectionm;
   }
 }
 #menu__main3 {
   @include cardm(url(/public/images/restaurants/toa.jpg), contain, no-repeat);
-
+  h1 {
+    @include menuh1;
+  }
+  .fa-heart {
+    @include fapage;
+  }
   section {
     @include sectionm;
   }
 }
 #menu__main4 {
   @include cardm(url(/public/images/restaurants/louis.jpg), contain, no-repeat);
-
+  h1 {
+    @include menuh1;
+  }
+  .fa-heart {
+    @include fapage;
+  }
   section {
     @include sectionm;
+  }
+}
+
+.gradient {
+  border: 0;
+  @include gradient;
+  padding: 15px 35px;
+  display: flex;
+  margin: auto;
+
+  .fas {
+    font-size: 20px;
+    color: $black;
+  }
+}
+
+.entrées,
+.Plats,
+.desserts {
+  flex-grow: 1;
+  padding-bottom: 15px;
+  a {
+    background-color: white;
+    margin-bottom: 15px;
+  }
+  p {
+    font-size: 0.8em;
+  }
+  h2 {
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 200;
+    color: $dark-grey;
+    padding-bottom: 20px;
+    span {
+      padding-bottom: 5px;
+      border-bottom: 3px solid $color-tertaire;
+    }
+  }
+}
+.menu:hover > .box {
+  width: 5em;
+  .check {
+    transform: rotate(0deg);
+  }
+}
+.namePlat {
+  flex-grow: 1;
+  width: 5em;
+
+  p,
+  h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 10px;
+  }
+}
+.price {
+  width: 8em;
+}
+.box {
+  display: flex;
+  width: 0;
+  transition: all 1s;
+  background-color: $color-tertaire;
+
+  .check {
+    margin: auto;
+
+    border-radius: 50%;
+    .fa-check-circle {
+      color: white;
+      font-size: 1.3em;
+    }
+
+    transition: transform 1s;
+    transform: rotate(180deg);
+  }
+}
+
+.menu {
+  display: flex;
+  width: 98%;
+  border-radius: 10px;
+  margin: auto;
+
+  overflow: hidden;
+  cursor: pointer;
+
+  &:hover > .box {
+    width: 20%;
+    .check {
+      transform: rotate(0deg);
+    }
   }
 }
