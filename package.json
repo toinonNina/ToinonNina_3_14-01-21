@@ -4,15 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
-
-  },
+    "sass" : "sass --watch ./sass/main.scss:./public/css/style.css",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/toinonNina/ToinonNina_3_14-01-21.git"
   },
   "author": "",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/toinonNina/ToinonNina_3_14-01-21/issues"
   },

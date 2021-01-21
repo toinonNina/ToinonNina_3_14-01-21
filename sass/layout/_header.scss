@@ -3,6 +3,8 @@ header {
   flex-direction: column;
   img {
     padding: 20px 0 10px 0;
+    width: 60%;
+    margin: auto;
   }
 
   article {
@@ -11,6 +13,7 @@ header {
     padding-bottom: 40px;
     p {
       padding-bottom: 30px;
+      color: $dark-grey;
     }
     h1 {
       padding: 20px 40px 0 40px;

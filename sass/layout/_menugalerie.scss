@@ -16,14 +16,13 @@
   }
 
   #new {
-    @include Btnnew(200px, 120px);
+    @include Btnnew(70%, 70%);
   }
   #new1 {
-    @include Btnnew(200px, 120px);
+    @include Btnnew(70%, 70%);
   }
 
   .text {
-    border: 1px solid red;
     @include text;
     display: inline-flex;
     flex-wrap: wrap;
