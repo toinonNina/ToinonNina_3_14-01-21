@@ -1,9 +1,22 @@
 header {
   display: flex;
   flex-direction: column;
+
+  .return {
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    z-index: 6;
+    background-color: $white;
+    border: 0;
+    .fa-arrow-left {
+      color: black;
+      font-size: 1.4em;
+    }
+  }
   img {
     padding: 20px 0 10px 0;
-    width: 60%;
+    width: 45%;
     margin: auto;
   }
 

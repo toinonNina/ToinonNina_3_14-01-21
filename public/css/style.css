@@ -25,7 +25,7 @@ p {
   color: #7e7e7e;
 }
 
-/*.loader {
+.loader {
   width: 100%;
   height: 100%;
   background-color: white;
@@ -33,24 +33,26 @@ p {
   display: grid;
   place-items: center center;
   z-index: 5;
-
-  pointer-events: none; /* retirer toute intéraction au clique sur l'élément*/
-/*& {
-    animation: space_spin 3000ms ease-in-out both; /* both pour que l'animation ne reaparait pas */
-/*  > .spinner {
-      animation: spin 3000ms ease-in-out both;
-    }
-  }
+  pointer-events: none;
+  /* retirer toute intéraction au clique sur l'élément*/
+}
+.loader {
+  animation: space_spin 3000ms ease-in-out both;
+  /* both pour que l'animation ne reaparait pas */
+}
+.loader > .spinner {
+  animation: spin 3000ms ease-in-out both;
 }
 
 .spinner {
   width: 50px;
   height: 50px;
-  border: 10px solid $color-primaire;
-  border-left-color: $color-secondaire;
+  border: 10px solid #9356dc;
+  border-left-color: #ff79da;
+  border-right-color: #99e2d0;
   border-radius: 100%;
 }
-// Spinner
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -59,7 +61,6 @@ p {
     transform: rotate(360deg);
   }
 }
-
 @keyframes space_spin {
   0% {
     opacity: 1;
@@ -71,33 +72,29 @@ p {
     opacity: 0;
     display: none;
   }
-}*/
+}
 .menu__btn1 {
   display: inline-flex;
-  margin-left: 20%;
+  margin-left: 15%;
   vertical-align: middle;
 }
-
-.menu__btn {
+.menu__btn1 .menu__btn {
+  margin-top: -15px;
   position: relative;
 }
-
-.menu__like {
+.menu__btn1 .menu__like {
   position: absolute;
   top: 0;
   left: 0;
 }
-
-.fa-heart {
+.menu__btn1 .fa-heart {
   padding: 0.2em;
 }
-
-.fa-heart::before {
+.menu__btn1 .fa-heart::before {
   content: "";
   position: absolute;
 }
-
-.fa-heart:hover::before {
+.menu__btn1 .fa-heart:hover::before {
   font-weight: bold;
   animation: progress-bar 1.5s ease-in-out;
   background-position: bottom;
@@ -133,7 +130,7 @@ p {
   position: absolute;
   /*important*/
   top: 16px;
-  left: 70px;
+  left: 25%;
   font-size: 15px;
   width: 40px;
   z-index: 1;
@@ -201,9 +198,21 @@ header {
   display: flex;
   flex-direction: column;
 }
+header .return {
+  position: absolute;
+  top: 2%;
+  left: 5%;
+  z-index: 6;
+  background-color: white;
+  border: 0;
+}
+header .return .fa-arrow-left {
+  color: black;
+  font-size: 1.4em;
+}
 header img {
   padding: 20px 0 10px 0;
-  width: 60%;
+  width: 45%;
   margin: auto;
 }
 header article {
@@ -259,9 +268,10 @@ header article .gradient {
   left: 70%;
   bottom: 70%;
   background-color: #99e2d0;
-  color: #32b091;
+  color: #2c9c81;
   border: 0;
   padding: 5px 10px;
+  font-weight: 600;
 }
 .restaurant #new1 {
   position: absolute;
@@ -269,9 +279,10 @@ header article .gradient {
   left: 70%;
   bottom: 70%;
   background-color: #99e2d0;
-  color: #32b091;
+  color: #2c9c81;
   border: 0;
   padding: 5px 10px;
+  font-weight: 600;
 }
 .restaurant .text {
   padding-top: 5px;
@@ -316,27 +327,24 @@ footer .fa-utensils {
   margin-right: 23px;
 }
 
-.menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-.menu button {
-  border: 0;
-  padding: 10px 15px;
-  background-color: white;
-}
-.menu button .fas {
-  font-size: 20px;
-  color: black;
-}
 #menu__main1 {
   box-shadow: 0px 4px 5px 0px #cbcbcb;
   background-image: url(/public/images/restaurants/jay.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   border: solid 1px white;
+}
+#menu__main1 h1 {
+  font-family: "Shrikhand";
+  font-weight: 400;
+  padding-left: 5%;
+  display: inline-flex;
+  vertical-align: middle;
+}
+#menu__main1 .fa-heart {
+  margin-left: 4%;
+  padding: 15px;
+  font-size: 1.3em;
 }
 #menu__main1 section {
   background-color: #f6f6f6;
@@ -353,6 +361,18 @@ footer .fa-utensils {
   background-repeat: no-repeat;
   border: solid 1px white;
 }
+#menu__main2 h1 {
+  font-family: "Shrikhand";
+  font-weight: 400;
+  padding-left: 5%;
+  display: inline-flex;
+  vertical-align: middle;
+}
+#menu__main2 .fa-heart {
+  margin-left: 4%;
+  padding: 15px;
+  font-size: 1.3em;
+}
 #menu__main2 section {
   background-color: #f6f6f6;
   padding-top: 10px;
@@ -367,6 +387,18 @@ footer .fa-utensils {
   background-size: contain;
   background-repeat: no-repeat;
   border: solid 1px white;
+}
+#menu__main3 h1 {
+  font-family: "Shrikhand";
+  font-weight: 400;
+  padding-left: 5%;
+  display: inline-flex;
+  vertical-align: middle;
+}
+#menu__main3 .fa-heart {
+  margin-left: 4%;
+  padding: 15px;
+  font-size: 1.3em;
 }
 #menu__main3 section {
   background-color: #f6f6f6;
@@ -383,12 +415,130 @@ footer .fa-utensils {
   background-repeat: no-repeat;
   border: solid 1px white;
 }
+#menu__main4 h1 {
+  font-family: "Shrikhand";
+  font-weight: 400;
+  padding-left: 5%;
+  display: inline-flex;
+  vertical-align: middle;
+}
+#menu__main4 .fa-heart {
+  margin-left: 4%;
+  padding: 15px;
+  font-size: 1.3em;
+}
 #menu__main4 section {
   background-color: #f6f6f6;
   padding-top: 10px;
   padding-bottom: 50px;
   margin-top: 160px;
   border-radius: 35px 35px 0 0;
+}
+
+.gradient {
+  border: 0;
+  background: linear-gradient(#ff79da, #9356dc);
+  padding: 15px;
+  color: white;
+  border: 0px;
+  border-radius: 20px;
+  box-shadow: 0px 3px 4px 2px #d1d1d1;
+  cursor: pointer;
+  padding: 15px 35px;
+  display: flex;
+  margin: auto;
+}
+.gradient .fas {
+  font-size: 20px;
+  color: black;
+}
+
+.entrées,
+.Plats,
+.desserts {
+  flex-grow: 1;
+  padding-bottom: 15px;
+}
+.entrées a,
+.Plats a,
+.desserts a {
+  background-color: white;
+  margin-bottom: 15px;
+}
+.entrées p,
+.Plats p,
+.desserts p {
+  font-size: 0.8em;
+}
+.entrées h2,
+.Plats h2,
+.desserts h2 {
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 200;
+  color: #7e7e7e;
+  padding-bottom: 20px;
+}
+.entrées h2 span,
+.Plats h2 span,
+.desserts h2 span {
+  padding-bottom: 5px;
+  border-bottom: 3px solid #99e2d0;
+}
+
+.menu:hover > .box {
+  width: 5em;
+}
+.menu:hover > .box .check {
+  transform: rotate(0deg);
+}
+
+.namePlat {
+  flex-grow: 1;
+  width: 5em;
+}
+.namePlat p,
+.namePlat h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-left: 10px;
+}
+
+.price {
+  width: 8em;
+}
+
+.box {
+  display: flex;
+  width: 0;
+  transition: all 1s;
+  background-color: #99e2d0;
+}
+.box .check {
+  margin: auto;
+  border-radius: 50%;
+  transition: transform 1s;
+  transform: rotate(180deg);
+}
+.box .check .fa-check-circle {
+  color: white;
+  font-size: 1.3em;
+}
+
+.menu {
+  display: flex;
+  width: 98%;
+  border-radius: 10px;
+  margin: auto;
+  overflow: hidden;
+  cursor: pointer;
+}
+.menu:hover > .box {
+  width: 20%;
+}
+.menu:hover > .box .check {
+  transform: rotate(0deg);
 }
 
 /*# sourceMappingURL=style.css.map */
