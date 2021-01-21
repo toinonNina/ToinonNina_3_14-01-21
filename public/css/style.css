@@ -18,7 +18,7 @@ h2 {
 
 h3,
 p {
-  margin: 0;
+  margin: 0 0 5px 0;
 }
 
 .fas {
@@ -72,99 +72,57 @@ p {
     display: none;
   }
 }*/
-/*.menu__btn {
-  border: 1px solid red;
-  display: inline-flex;
-  margin-left: 30%;
-  vertical-align: middle;
-
-  &:hover::before {
-    opacity: 1;
-  }
-  &::before {
-    opacity: 0;
-    transition: 0.9s;
-    content: "";
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-  }
-}
-.menu__like {
-  transition: color 2s ease-in-out;
-  height: 100%;
-  width: 100%;
-}
-
-.menu__btn:hover {
-  opacity: 1;
-  animation: gradient 1500ms;
-
-  .menu__like {
-    &--noBg {
-      font-weight: bold;
-      background: linear-gradient(
-        0deg,
-        $color-primaire 0%,
-        $color-secondaire 100%
-      );
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-  }
-}
-/*
-@keyframes gradient {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.1);
-  }
-}*/
 .menu__btn1 {
-  border: 1px solid red;
   display: inline-flex;
-  margin-left: 30%;
+  margin-left: 20%;
   vertical-align: middle;
 }
 
 .menu__btn {
-  height: 2rem;
-  width: 2rem;
-  cursor: pointer;
   position: relative;
-  background-color: black;
-}
-.menu__btn:hover::before {
-  opacity: 1;
-}
-.menu__btn::before {
-  opacity: 0;
-  transition: 0.8s;
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
 }
 
 .menu__like {
-  transition-duration: 0.35s;
-  background-color: white;
   position: absolute;
-  mix-blend-mode: lighten;
-}
-
-.menu__btn:hover .menu__like--noBg {
-  opacity: 0;
+  top: 0;
+  left: 0;
 }
 
 .fa-heart {
-  color: black;
+  padding: 0.2em;
 }
 
+.fa-heart::before {
+  content: "";
+  position: absolute;
+}
+
+.fa-heart:hover::before {
+  font-weight: bold;
+  animation: progress-bar 1.5s ease-in-out;
+  background-position: bottom;
+  background-image: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  background-size: 100% 0%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+@keyframes progress-bar {
+  from {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 0% 0%;
+  }
+  to {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 100% 100%;
+    color: black;
+  }
+}
 .input-icon {
   position: relative;
   background-color: #eaeaea;
@@ -201,7 +159,7 @@ input::placeholder {
 
 .steps__list {
   list-style: none;
-  padding: 10px 10px 25px 20px;
+  padding: 10px 10px 20px 20px;
   counter-reset: repas;
   /* on initialise et nomme un compteur */
 }
@@ -211,7 +169,7 @@ input::placeholder {
   background-color: #f6f6f6;
   box-shadow: 2px 4px 8px 0px #eaeaea;
   border-radius: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   list-style-type: none;
   counter-increment: repas;
 }
@@ -245,6 +203,8 @@ header {
 }
 header img {
   padding: 20px 0 10px 0;
+  width: 60%;
+  margin: auto;
 }
 header article {
   text-align: center;
@@ -253,6 +213,7 @@ header article {
 }
 header article p {
   padding-bottom: 30px;
+  color: #7e7e7e;
 }
 header article h1 {
   padding: 20px 40px 0 40px;
@@ -282,6 +243,7 @@ header article .gradient {
   border-radius: 15px;
   margin: 10px;
   padding-bottom: 10px;
+  height: 250px;
   box-shadow: 0px 4px 5px 0px #cbcbcb;
 }
 .restaurant__photo--large {
@@ -294,8 +256,8 @@ header article .gradient {
 .restaurant #new {
   position: absolute;
   z-index: 1;
-  left: 200px;
-  bottom: 120px;
+  left: 70%;
+  bottom: 70%;
   background-color: #99e2d0;
   color: #32b091;
   border: 0;
@@ -304,15 +266,14 @@ header article .gradient {
 .restaurant #new1 {
   position: absolute;
   z-index: 1;
-  left: 200px;
-  bottom: 120px;
+  left: 70%;
+  bottom: 70%;
   background-color: #99e2d0;
   color: #32b091;
   border: 0;
   padding: 5px 10px;
 }
 .restaurant .text {
-  border: 1px solid red;
   padding-top: 5px;
   padding-left: 10px;
   width: 60%;
@@ -350,6 +311,9 @@ footer h2 {
 footer .fas {
   margin-right: 15px;
   color: white;
+}
+footer .fa-utensils {
+  margin-right: 23px;
 }
 
 .menu {
