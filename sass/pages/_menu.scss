@@ -5,15 +5,6 @@
     object-fit: cover;
     width: 100%;
 
-  .bgphoto {
-   background-image:url("/public/images/restaurants/jay.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top;
-  padding-top: 50%;
-
-  }
-
   h1 {
     @include menuh1;
   }
