@@ -19,7 +19,7 @@
     content: "\f004";
     position: absolute;
   }
-  .fa-heart:hover::before {
+  .fa-heart:active::before {
     font-weight: bold;
     animation: progress-bar 1.5s ease-in-out;
 

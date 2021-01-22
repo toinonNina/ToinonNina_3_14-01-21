@@ -59,7 +59,12 @@
   padding: 15px 35px;
   display: flex;
   margin: auto;
-
+  &:hover {
+    background: linear-gradient(
+      rgba(255, 121, 218, 0.8),
+      rgba(147, 86, 220, 0.8)
+    );
+  }
   .fas {
     font-size: 20px;
     color: $black;
