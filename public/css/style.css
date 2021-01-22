@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*-------base css -----------*/
 body {
   width: auto;
   margin: 0;
@@ -25,6 +26,7 @@ p {
   color: #7e7e7e;
 }
 
+/*------------lOADING SPINNER -----------------*/
 .loader {
   width: 100%;
   height: 100%;
@@ -38,7 +40,7 @@ p {
 }
 .loader {
   animation: space_spin 3000ms ease-in-out both;
-  /* both pour que l'animation ne reaparait pas */
+  /* both pour que l'animation ne reaparait pas*/
 }
 .loader > .spinner {
   animation: spin 3000ms ease-in-out both;
@@ -53,6 +55,7 @@ p {
   border-radius: 100%;
 }
 
+/* Spinner animation */
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -73,52 +76,112 @@ p {
     display: none;
   }
 }
-.menu__btn1 {
+/*superposition des coeurs*/
+/*.menu__btn1 {
   display: inline-flex;
   margin-left: 15%;
   vertical-align: middle;
-}
-.menu__btn1 .menu__btn {
-  margin-top: -15px;
-  position: relative;
-}
-.menu__btn1 .menu__like {
+
+  .menu__btn {
+    margin-top: -15px;
+    position: relative;
+  }
+  .menu__like {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .fa-heart {
+    padding: 0.2em;
+  }
+}*/
+/* animation des coeurs en remplissage progressive*/
+/*.fa-heart::before {
+  content: "\f004";
   position: absolute;
-  top: 0;
-  left: 0;
 }
-.menu__btn1 .fa-heart {
-  padding: 0.2em;
-}
-.menu__btn1 .fa-heart::before {
-  content: "";
-  position: absolute;
-}
-.menu__btn1 .fa-heart:active::before {
+.fa-heart:hover::before {
   font-weight: bold;
   animation: progress-bar 1.5s ease-in-out;
-  background-image: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+
+  background-image: linear-gradient(
+    0deg,
+    $color-primaire 0%,
+    $color-secondaire 100%
+  );
   background-size: 100% 0%;
   background-position: bottom;
   background-repeat: no-repeat;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -color: transparent;
   cursor: pointer;
 }
 
 @keyframes progress-bar {
   from {
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
     background-size: 0% 0%;
   }
   to {
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
     background-size: 100% 100%;
     color: black;
   }
+}*/
+.menu__btn1 {
+  display: inline-flex;
+  margin-left: 15%;
+  vertical-align: middle;
 }
+.menu__btn1 .fa-heart {
+  padding: 0.2em;
+  color: black;
+}
+
+.menu__btn {
+  height: 3rem;
+  width: 3rem;
+  background-color: transparent;
+  border: transparent 0px solid;
+  padding: 0;
+  margin-top: 20%;
+  cursor: pointer;
+  position: relative;
+  background-color: black;
+}
+.menu__btn:hover::before {
+  opacity: 1;
+}
+.menu__btn::before {
+  opacity: 0;
+  transition: 0.5s;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+}
+
+.menu__like {
+  transition-duration: 0.45s;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  mix-blend-mode: lighten;
+}
+
+.menu__btn:hover .menu__like--noBg {
+  opacity: 0;
+}
+
+/*---------Champ de saisie ville --------------*/
 .input-icon {
   position: relative;
   background-color: #eaeaea;
@@ -153,6 +216,7 @@ input::placeholder {
   font-size: 1.2em;
 }
 
+/* -------------NOTICE DE FONCTIONNEMENT --------------*/
 .steps__list {
   list-style: none;
   padding: 10px 10px 20px 20px;
@@ -193,6 +257,7 @@ input::placeholder {
   color: #9356dc;
 }
 
+/* ---------HEADER-------*/
 header {
   display: flex;
   flex-direction: column;
@@ -238,9 +303,12 @@ header article .gradient {
 }
 header article .gradient:hover {
   background: linear-gradient(rgba(255, 121, 218, 0.8), rgba(147, 86, 220, 0.8));
+  /*éclaircissement couleur*/
   box-shadow: 0px 3px 4px 2px #b7b7b7;
+  /* durcissement ombre*/
 }
 
+/*galerie des menus porposé*/
 .restaurant {
   background-color: #f6f6f6;
   padding-top: 10px;
@@ -302,6 +370,7 @@ header article .gradient:hover {
   position: relative;
 }
 
+/*---------FOOTER-------*/
 footer {
   background-color: #353535;
   color: white;
@@ -331,6 +400,7 @@ footer .fa-utensils {
   margin-right: 23px;
 }
 
+/* bases des pages menus*/
 #menu__main1 img {
   height: 235px;
   object-fit: cover;
@@ -346,11 +416,12 @@ footer .fa-utensils {
 #menu__main1 .fa-heart {
   padding: 15px;
   font-size: 1.3em;
-  margin-right: 10px;
+  margin-right: 25px;
 }
 #menu__main1 section {
   width: 100%;
   z-index: 1;
+  /* pour le faire passer a l'avant */
   position: relative;
   background-color: #f6f6f6;
   padding-top: 10px;
@@ -379,7 +450,7 @@ footer .fa-utensils {
 #menu__main2 .fa-heart {
   padding: 15px;
   font-size: 1.3em;
-  margin-right: 10px;
+  margin-right: 25px;
 }
 #menu__main2 section {
   width: 100%;
@@ -412,7 +483,7 @@ footer .fa-utensils {
 #menu__main3 .fa-heart {
   padding: 15px;
   font-size: 1.3em;
-  margin-right: 10px;
+  margin-right: 25px;
 }
 #menu__main3 section {
   width: 100%;
@@ -445,7 +516,7 @@ footer .fa-utensils {
 #menu__main4 .fa-heart {
   padding: 15px;
   font-size: 1.3em;
-  margin-right: 10px;
+  margin-right: 25px;
 }
 #menu__main4 section {
   width: 100%;
@@ -480,24 +551,24 @@ footer .fa-utensils {
   background: linear-gradient(rgba(255, 121, 218, 0.8), rgba(147, 86, 220, 0.8));
 }
 
-.entrées,
+.entrees,
 .Plats,
 .desserts {
   flex-grow: 1;
   padding-bottom: 15px;
 }
-.entrées a,
+.entrees a,
 .Plats a,
 .desserts a {
   background-color: white;
   margin-bottom: 15px;
 }
-.entrées p,
+.entrees p,
 .Plats p,
 .desserts p {
   font-size: 0.8em;
 }
-.entrées h2,
+.entrees h2,
 .Plats h2,
 .desserts h2 {
   font-size: 1em;
@@ -506,13 +577,14 @@ footer .fa-utensils {
   color: #7e7e7e;
   padding-bottom: 20px;
 }
-.entrées h2 span,
+.entrees h2 span,
 .Plats h2 span,
 .desserts h2 span {
   padding-bottom: 5px;
   border-bottom: 3px solid #99e2d0;
 }
 
+/* liste des menus */
 .menu:hover > .box {
   width: 5em;
 }
@@ -555,6 +627,7 @@ footer .fa-utensils {
   font-size: 1.3em;
 }
 
+/* animation menus */
 .menu {
   display: flex;
   width: 98%;

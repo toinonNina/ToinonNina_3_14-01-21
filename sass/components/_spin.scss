@@ -1,3 +1,5 @@
+/*------------lOADING SPINNER -----------------*/
+
 .loader {
   width: 100%;
   height: 100%;
@@ -9,7 +11,7 @@
 
   pointer-events: none; /* retirer toute intéraction au clique sur l'élément*/
   & {
-    animation: space_spin 3000ms ease-in-out both; /* both pour que l'animation ne reaparait pas */
+    animation: space_spin 3000ms ease-in-out both; /* both pour que l'animation ne reaparait pas*/
     > .spinner {
       animation: spin 3000ms ease-in-out both;
     }
@@ -24,7 +26,7 @@
   border-right-color: $color-tertaire;
   border-radius: 100%;
 }
-// Spinner
+/* Spinner animation */
 @keyframes spin {
   0% {
     transform: rotate(0deg);
