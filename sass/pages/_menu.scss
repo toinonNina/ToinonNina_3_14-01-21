@@ -1,6 +1,10 @@
 #menu__main1 {
   .bgphoto {
-    @include cardm(url("/public/images/restaurants/jay.jpg"));
+   background-image:url("/public/images/restaurants/jay.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  padding-top: 70%;
   }
   h1 {
     @include menuh1;
