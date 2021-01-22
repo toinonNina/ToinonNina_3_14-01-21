@@ -1,6 +1,6 @@
 #menu__main1 {
   .bgphoto {
-    @include cardm(url(/public/images/restaurants/jay.jpg));
+    @include cardm(url("/public/images/restaurants/jay.jpg"));
   }
   h1 {
     @include menuh1;
