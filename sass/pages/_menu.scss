@@ -1,10 +1,9 @@
 #menu__main1 {
-
   img {
     height: 235px;
     object-fit: cover;
     width: 100%;
-
+  }
   h1 {
     @include menuh1;
   }
