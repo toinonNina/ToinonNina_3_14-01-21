@@ -22,7 +22,7 @@
   .fa-heart:hover::before {
     font-weight: bold;
     animation: progress-bar 1.5s ease-in-out;
-    background-position: bottom;
+
     background-image: linear-gradient(
       0deg,
       $color-primaire 0%,
