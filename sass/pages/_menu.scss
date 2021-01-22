@@ -1,5 +1,6 @@
 #menu__main1 {
-  @include cardm(url(/public/images/restaurants/jay.jpg), contain, no-repeat);
+  @include cardm(url(/public/images/restaurants/jay.jpg));
+
   h1 {
     @include menuh1;
   }
@@ -11,7 +12,7 @@
   }
 }
 #menu__main2 {
-  @include cardm(url(/public/images/restaurants/stil.jpg), contain, no-repeat);
+  @include cardm(url(/public/images/restaurants/stil.jpg));
   h1 {
     @include menuh1;
   }
@@ -23,7 +24,7 @@
   }
 }
 #menu__main3 {
-  @include cardm(url(/public/images/restaurants/toa.jpg), contain, no-repeat);
+  @include cardm(url(/public/images/restaurants/toa.jpg));
   h1 {
     @include menuh1;
   }
@@ -35,7 +36,7 @@
   }
 }
 #menu__main4 {
-  @include cardm(url(/public/images/restaurants/louis.jpg), contain, no-repeat);
+  @include cardm(url(/public/images/restaurants/louis.jpg));
   h1 {
     @include menuh1;
   }
@@ -103,7 +104,9 @@
   }
 }
 .price {
-  width: 8em;
+  width: 2.5em;
+  padding-top: 9%;
+  font-weight: bold;
 }
 .box {
   display: flex;
