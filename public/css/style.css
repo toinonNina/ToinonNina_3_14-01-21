@@ -328,7 +328,6 @@ footer .fa-utensils {
 }
 
 #menu__main1 {
-  box-shadow: 0px 4px 5px 0px #cbcbcb;
   background-image: url(/public/images/restaurants/jay.jpg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -355,7 +354,6 @@ footer .fa-utensils {
 }
 
 #menu__main2 {
-  box-shadow: 0px 4px 5px 0px #cbcbcb;
   background-image: url(/public/images/restaurants/stil.jpg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -382,7 +380,6 @@ footer .fa-utensils {
 }
 
 #menu__main3 {
-  box-shadow: 0px 4px 5px 0px #cbcbcb;
   background-image: url(/public/images/restaurants/toa.jpg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -409,7 +406,6 @@ footer .fa-utensils {
 }
 
 #menu__main4 {
-  box-shadow: 0px 4px 5px 0px #cbcbcb;
   background-image: url(/public/images/restaurants/louis.jpg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -506,7 +502,9 @@ footer .fa-utensils {
 }
 
 .price {
-  width: 8em;
+  width: 2.5em;
+  padding-top: 9%;
+  font-weight: bold;
 }
 
 .box {
