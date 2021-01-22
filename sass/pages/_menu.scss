@@ -1,11 +1,19 @@
 #menu__main1 {
+
+  img {
+    height: 235px;
+    object-fit: cover;
+    width: 100%;
+
   .bgphoto {
    background-image:url("/public/images/restaurants/jay.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top;
   padding-top: 50%;
+
   }
+
   h1 {
     @include menuh1;
   }
@@ -13,11 +21,23 @@
     @include fapage;
   }
   section {
+    width: 100%;
+    z-index: 1;
+    position: relative;
     @include sectionm;
+    .titre {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
   }
 }
 #menu__main2 {
-  @include cardm(url(/public/images/restaurants/stil.jpg));
+  img {
+    height: 235px;
+    object-fit: cover;
+    width: 100%;
+  }
   h1 {
     @include menuh1;
   }
@@ -25,11 +45,24 @@
     @include fapage;
   }
   section {
+    width: 100%;
+    z-index: 1;
+    position: relative;
     @include sectionm;
+
+    .titre {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
   }
 }
 #menu__main3 {
-  @include cardm(url(/public/images/restaurants/toa.jpg));
+  img {
+    height: 235px;
+    object-fit: cover;
+    width: 100%;
+  }
   h1 {
     @include menuh1;
   }
@@ -37,11 +70,23 @@
     @include fapage;
   }
   section {
+    width: 100%;
+    z-index: 1;
+    position: relative;
     @include sectionm;
+    .titre {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
   }
 }
 #menu__main4 {
-  @include cardm(url(/public/images/restaurants/louis.jpg));
+  img {
+    height: 235px;
+    object-fit: cover;
+    width: 100%;
+  }
   h1 {
     @include menuh1;
   }
@@ -49,7 +94,15 @@
     @include fapage;
   }
   section {
+    width: 100%;
+    z-index: 1;
+    position: relative;
     @include sectionm;
+    .titre {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
   }
 }
 
@@ -64,10 +117,6 @@
       rgba(255, 121, 218, 0.8),
       rgba(147, 86, 220, 0.8)
     );
-  }
-  .fas {
-    font-size: 20px;
-    color: $black;
   }
 }
 

@@ -31,14 +31,6 @@
   position: relative;
 }
 
-@mixin cardm($background-image) {
-  background-image: $background-image;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top;
-  padding-top: 70%;
-}
-
 @mixin menuh1 {
   font-family: "Shrikhand";
   font-weight: 400;
@@ -48,9 +40,9 @@
 }
 
 @mixin fapage {
-  margin-left: 4%;
   padding: 15px;
   font-size: 1.3em;
+  margin-right: 10px;
 }
 
 @mixin sectionm {
