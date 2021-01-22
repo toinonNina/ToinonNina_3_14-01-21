@@ -331,12 +331,10 @@ footer .fa-utensils {
   margin-right: 23px;
 }
 
-#menu__main1 .bgphoto {
-  background-image: url(/public/images/restaurants/jay.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top;
-  padding-top: 70%;
+#menu__main1 img {
+  height: 235px;
+  object-fit: cover;
+  width: 100%;
 }
 #menu__main1 h1 {
   font-family: "Shrikhand";
@@ -346,24 +344,30 @@ footer .fa-utensils {
   vertical-align: middle;
 }
 #menu__main1 .fa-heart {
-  margin-left: 4%;
   padding: 15px;
   font-size: 1.3em;
+  margin-right: 10px;
 }
 #menu__main1 section {
+  width: 100%;
+  z-index: 1;
+  position: relative;
   background-color: #f6f6f6;
   padding-top: 10px;
   padding-bottom: 50px;
   margin-top: -50px;
   border-radius: 35px 35px 0 0;
 }
+#menu__main1 section .titre {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
 
-#menu__main2 {
-  background-image: url(/public/images/restaurants/stil.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top;
-  padding-top: 70%;
+#menu__main2 img {
+  height: 235px;
+  object-fit: cover;
+  width: 100%;
 }
 #menu__main2 h1 {
   font-family: "Shrikhand";
@@ -373,24 +377,30 @@ footer .fa-utensils {
   vertical-align: middle;
 }
 #menu__main2 .fa-heart {
-  margin-left: 4%;
   padding: 15px;
   font-size: 1.3em;
+  margin-right: 10px;
 }
 #menu__main2 section {
+  width: 100%;
+  z-index: 1;
+  position: relative;
   background-color: #f6f6f6;
   padding-top: 10px;
   padding-bottom: 50px;
   margin-top: -50px;
   border-radius: 35px 35px 0 0;
 }
+#menu__main2 section .titre {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
 
-#menu__main3 {
-  background-image: url(/public/images/restaurants/toa.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top;
-  padding-top: 70%;
+#menu__main3 img {
+  height: 235px;
+  object-fit: cover;
+  width: 100%;
 }
 #menu__main3 h1 {
   font-family: "Shrikhand";
@@ -400,24 +410,30 @@ footer .fa-utensils {
   vertical-align: middle;
 }
 #menu__main3 .fa-heart {
-  margin-left: 4%;
   padding: 15px;
   font-size: 1.3em;
+  margin-right: 10px;
 }
 #menu__main3 section {
+  width: 100%;
+  z-index: 1;
+  position: relative;
   background-color: #f6f6f6;
   padding-top: 10px;
   padding-bottom: 50px;
   margin-top: -50px;
   border-radius: 35px 35px 0 0;
 }
+#menu__main3 section .titre {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
 
-#menu__main4 {
-  background-image: url(/public/images/restaurants/louis.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top;
-  padding-top: 70%;
+#menu__main4 img {
+  height: 235px;
+  object-fit: cover;
+  width: 100%;
 }
 #menu__main4 h1 {
   font-family: "Shrikhand";
@@ -427,16 +443,24 @@ footer .fa-utensils {
   vertical-align: middle;
 }
 #menu__main4 .fa-heart {
-  margin-left: 4%;
   padding: 15px;
   font-size: 1.3em;
+  margin-right: 10px;
 }
 #menu__main4 section {
+  width: 100%;
+  z-index: 1;
+  position: relative;
   background-color: #f6f6f6;
   padding-top: 10px;
   padding-bottom: 50px;
   margin-top: -50px;
   border-radius: 35px 35px 0 0;
+}
+#menu__main4 section .titre {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .gradient {
@@ -454,10 +478,6 @@ footer .fa-utensils {
 }
 .gradient:hover {
   background: linear-gradient(rgba(255, 121, 218, 0.8), rgba(147, 86, 220, 0.8));
-}
-.gradient .fas {
-  font-size: 20px;
-  color: black;
 }
 
 .entrées,
