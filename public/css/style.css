@@ -264,7 +264,7 @@ header {
 }
 header .return {
   position: absolute;
-  top: 3%;
+  top: 30px;
   left: 5%;
   z-index: 6;
   background-color: white;
@@ -274,9 +274,11 @@ header .return .fa-arrow-left {
   color: black;
   font-size: 1.4em;
 }
-header img {
+header .logo {
+  font-family: "Shrikhand";
   padding: 20px 0 10px 0;
-  width: 45%;
+  width: 55%;
+  font-size: 2em;
   margin: auto;
 }
 header article {
@@ -413,11 +415,6 @@ footer .fa-utensils {
   display: inline-flex;
   vertical-align: middle;
 }
-#menu__main1 .fa-heart {
-  padding: 15px;
-  font-size: 1.3em;
-  margin-right: 25px;
-}
 #menu__main1 section {
   width: 100%;
   z-index: 1;
@@ -432,7 +429,9 @@ footer .fa-utensils {
 #menu__main1 section .titre {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+}
+#menu__main1 section .titre .menu__btn {
+  margin-top: 45%;
 }
 
 #menu__main2 img {
@@ -447,11 +446,6 @@ footer .fa-utensils {
   display: inline-flex;
   vertical-align: middle;
 }
-#menu__main2 .fa-heart {
-  padding: 15px;
-  font-size: 1.3em;
-  margin-right: 25px;
-}
 #menu__main2 section {
   width: 100%;
   z-index: 1;
@@ -465,7 +459,9 @@ footer .fa-utensils {
 #menu__main2 section .titre {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+}
+#menu__main2 section .titre .menu__btn {
+  margin-top: 45%;
 }
 
 #menu__main3 img {
@@ -480,11 +476,6 @@ footer .fa-utensils {
   display: inline-flex;
   vertical-align: middle;
 }
-#menu__main3 .fa-heart {
-  padding: 15px;
-  font-size: 1.3em;
-  margin-right: 25px;
-}
 #menu__main3 section {
   width: 100%;
   z-index: 1;
@@ -498,7 +489,9 @@ footer .fa-utensils {
 #menu__main3 section .titre {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+}
+#menu__main3 section .titre .menu__btn {
+  margin-top: 45%;
 }
 
 #menu__main4 img {
@@ -513,11 +506,6 @@ footer .fa-utensils {
   display: inline-flex;
   vertical-align: middle;
 }
-#menu__main4 .fa-heart {
-  padding: 15px;
-  font-size: 1.3em;
-  margin-right: 25px;
-}
 #menu__main4 section {
   width: 100%;
   z-index: 1;
@@ -531,9 +519,12 @@ footer .fa-utensils {
 #menu__main4 section .titre {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+}
+#menu__main4 section .titre .menu__btn {
+  margin-top: 45%;
 }
 
+/* --------- bouton gradient --------*/
 .gradient {
   border: 0;
   background: linear-gradient(#ff79da, #9356dc);
@@ -551,6 +542,7 @@ footer .fa-utensils {
   background: linear-gradient(rgba(255, 121, 218, 0.8), rgba(147, 86, 220, 0.8));
 }
 
+/* ---------- mise en page menu -----------*/
 .entrees,
 .Plats,
 .desserts {
@@ -562,6 +554,7 @@ footer .fa-utensils {
 .desserts a {
   background-color: white;
   margin-bottom: 15px;
+  height: 70px;
 }
 .entrees p,
 .Plats p,
@@ -576,12 +569,28 @@ footer .fa-utensils {
   font-weight: 200;
   color: #7e7e7e;
   padding-bottom: 20px;
+  padding-left: 13px;
 }
 .entrees h2 span,
 .Plats h2 span,
 .desserts h2 span {
   padding-bottom: 5px;
   border-bottom: 3px solid #99e2d0;
+}
+
+/* --------- coeur menu------------*/
+.menu__btn2 .fa-heart {
+  font-size: 1.5em;
+  color: black;
+}
+.menu__btn2 .menu__btn {
+  height: 3rem;
+  width: 3rem;
+  margin-top: 10%;
+}
+.menu__btn2 .menu__like {
+  background-color: #f6f6f6;
+  top: 0;
 }
 
 /* liste des menus */
@@ -595,18 +604,18 @@ footer .fa-utensils {
 .namePlat {
   flex-grow: 1;
   width: 5em;
+  padding: 10px;
 }
 .namePlat p,
 .namePlat h3 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  padding-left: 10px;
 }
 
 .price {
   width: 2.5em;
-  padding-top: 9%;
+  padding-top: 12%;
   font-weight: bold;
 }
 
@@ -630,7 +639,7 @@ footer .fa-utensils {
 /* animation menus */
 .menu {
   display: flex;
-  width: 98%;
+  width: 93%;
   border-radius: 10px;
   margin: auto;
   overflow: hidden;

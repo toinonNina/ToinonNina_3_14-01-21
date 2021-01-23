@@ -6,7 +6,7 @@ header {
 
   .return {
     position: absolute;
-    top: 3%;
+    top: 30px;
     left: 5%;
     z-index: 6;
     background-color: $white;
@@ -16,9 +16,11 @@ header {
       font-size: 1.4em;
     }
   }
-  img {
+  .logo {
+    font-family: "Shrikhand";
     padding: 20px 0 10px 0;
-    width: 45%;
+    width: 55%;
+    font-size: 2em;
     margin: auto;
   }
 

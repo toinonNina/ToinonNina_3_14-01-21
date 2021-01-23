@@ -26,7 +26,7 @@
       <!-- <a href="index.html" target="_blank">
           <button class="return"><i class="fas fa-arrow-left"></i></button>
         </a> -->
-      <img src="public/images/logo/ohmyfood@2x.svg" alt="logo" />
+      <p class="logo">Ohmyfood</p>
 
       <div class="input-icon">
         <span class="icone">
@@ -62,12 +62,13 @@
       <section class="restaurant">
         <h2>Restaurants</h2>
         <div class="restaurant__flex">
-          <a class="restaurant__photo" href="la-palette-du-gout.html">
+          <!-------------------- La palette du goût ------------------------------->
+          <a class="restaurant__photo" href="la-palette-du-gout.html" alt="">
             <div class="block">
               <img
                 class="restaurant__photo--large"
                 src="public/images/restaurants/jay.jpg"
-                alt=""
+                alt="Menu La palette du goût"
               />
               <div id="new">Nouveau</div>
             </div>
@@ -87,12 +88,13 @@
               </div>
             </div>
           </a>
-          <a class="restaurant__photo" href="la-note-enchantee.html">
+          <!-------------------- La note enchantée ------------------------------->
+          <a class="restaurant__photo" href="la-note-enchantee.html" alt="">
             <div class="block">
               <img
                 class="restaurant__photo--large"
                 src="public/images/restaurants/stil.jpg"
-                alt=""
+                alt="Menu La note enchantée"
               />
               <div id="new1">Nouveau</div>
             </div>
@@ -111,11 +113,12 @@
               </div>
             </div>
           </a>
+          <!--------------------  À la française ------------------------------->
           <a class="restaurant__photo" href="a-la-française.html">
             <img
               class="restaurant__photo--large"
               src="public/images/restaurants/toa.jpg"
-              alt=""
+              alt="Menu À la française"
             />
 
             <div class="text">
@@ -133,11 +136,12 @@
               </div>
             </div>
           </a>
-          <a class="restaurant__photo" href="le-delice-des-sens.html">
+          <!--------------------  Le délice des sens ------------------------------->
+          <a class="restaurant__photo" href="le-delice-des-sens.html" alt="">
             <img
               class="restaurant__photo--large"
               src="public/images/restaurants/louis.jpg"
-              alt=""
+              alt="Menu Le délice des sens"
             />
 
             <div class="text">
@@ -145,13 +149,9 @@
               <p>Folie-Méricourt</p>
             </div>
             <div class="menu__btn1">
-              <div class="menu__btn card__btn">
-                <i
-                  class="card__like menu__like menu__like--noBg far fa-heart fa-2x"
-                ></i>
-                <i
-                  class="card__like menu__like menu__like--bg fas fa-heart fa-2x"
-                ></i>
+              <div class="menu__btn">
+                <i class="menu__like menu__like--noBg far fa-heart fa-2x"></i>
+                <i class="menu__like menu__like--bg fas fa-heart fa-2x"></i>
               </div>
             </div>
           </a>
@@ -162,10 +162,14 @@
     <footer>
       <h2>Ohmyfood</h2>
       <ul>
-        <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
-        <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
-        <li>Mentions légales</li>
-        <li><a class="linkwhite" href="mailto:xxx@yz.org">Contact</a></li>
+        <li>
+          <a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a>
+        </li>
+        <li><a href="#">Mentions légales</a></li>
+        <li><a href="mailto:xxx@yz.org">Contact</a></li>
       </ul>
     </footer>
   </body>
