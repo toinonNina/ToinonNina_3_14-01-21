@@ -8,9 +8,7 @@
   h1 {
     @include menuh1;
   }
-  .fa-heart {
-    @include fapage;
-  }
+
   section {
     width: 100%;
     z-index: 1; /* pour le faire passer a l'avant */
@@ -19,7 +17,9 @@
     .titre {
       display: flex;
       justify-content: space-between;
-      align-items: baseline;
+      .menu__btn {
+        margin-top: 45%;
+      }
     }
   }
 }
@@ -32,9 +32,7 @@
   h1 {
     @include menuh1;
   }
-  .fa-heart {
-    @include fapage;
-  }
+
   section {
     width: 100%;
     z-index: 1;
@@ -44,7 +42,9 @@
     .titre {
       display: flex;
       justify-content: space-between;
-      align-items: baseline;
+      .menu__btn {
+        margin-top: 45%;
+      }
     }
   }
 }
@@ -57,9 +57,7 @@
   h1 {
     @include menuh1;
   }
-  .fa-heart {
-    @include fapage;
-  }
+
   section {
     width: 100%;
     z-index: 1;
@@ -68,7 +66,9 @@
     .titre {
       display: flex;
       justify-content: space-between;
-      align-items: baseline;
+      .menu__btn {
+        margin-top: 45%;
+      }
     }
   }
 }
@@ -81,9 +81,7 @@
   h1 {
     @include menuh1;
   }
-  .fa-heart {
-    @include fapage;
-  }
+
   section {
     width: 100%;
     z-index: 1;
@@ -92,11 +90,13 @@
     .titre {
       display: flex;
       justify-content: space-between;
-      align-items: baseline;
+      .menu__btn {
+        margin-top: 45%;
+      }
     }
   }
 }
-
+/* --------- bouton gradient --------*/
 .gradient {
   border: 0;
   @include gradient;
@@ -110,15 +110,17 @@
     );
   }
 }
-
+/* ---------- mise en page menu -----------*/
 .entrees,
 .Plats,
 .desserts {
   flex-grow: 1;
   padding-bottom: 15px;
+
   a {
     background-color: white;
     margin-bottom: 15px;
+    height: 70px;
   }
   p {
     font-size: 0.8em;
@@ -129,13 +131,29 @@
     font-weight: 200;
     color: $dark-grey;
     padding-bottom: 20px;
+    padding-left: 13px;
     span {
       padding-bottom: 5px;
       border-bottom: 3px solid $color-tertaire;
     }
   }
 }
-
+/* --------- coeur menu------------*/
+.menu__btn2 {
+  .fa-heart {
+    font-size: 1.5em;
+    color: black;
+  }
+  .menu__btn {
+    height: 3rem;
+    width: 3rem;
+    margin-top: 10%;
+  }
+  .menu__like {
+    background-color: $background;
+    top: 0;
+  }
+}
 /* liste des menus */
 .menu:hover > .box {
   width: 5em;
@@ -146,18 +164,18 @@
 .namePlat {
   flex-grow: 1;
   width: 5em;
+  padding: 10px;
 
   p,
   h3 {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    padding-left: 10px;
   }
 }
 .price {
   width: 2.5em;
-  padding-top: 9%;
+  padding-top: 12%;
   font-weight: bold;
 }
 .box {
@@ -182,7 +200,7 @@
 /* animation menus */
 .menu {
   display: flex;
-  width: 98%;
+  width: 93%;
   border-radius: 10px;
   margin: auto;
 
