@@ -57,7 +57,7 @@ p {
 }
 @media (min-width: 1440px) and (max-width: 2559px) {
   .loader {
-    width: 90%;
+    width: 80%;
   }
 }
 @media (min-width: 2560px) {
