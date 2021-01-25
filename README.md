@@ -1,5 +1,8 @@
 # > Oh my Food
 
+=======
+
+
 
 
 ## Informations générales
@@ -9,11 +12,12 @@
 
 ## Captures d'écran
 
-! (a venir)
+! ![alt text](https://www.casimages.com/i/21012501425320185217228547.png.html)
 
 ## Les technologies
 
 - HTML / CSS / Sass
+- Mobile first
 
 ## Visualisation projet
 
@@ -36,7 +40,8 @@ Liste des fonctionnalités prêtes et TODO pour le développement futur
 
 #### Pages de menu
 
-- À l’arrivée sur la page, les plats devront apparaître progressivement avec un léger décalage dans le temps. Ils pourront soit apparaître un par un, soit par groupe “Entrée”, “Plat” et “Dessert”. Un exemple de l’effet attendu est fourni.
+- À l’arrivée sur la page, les plats devront apparaître progressivement avec un léger décalage dans le temps. Ils pourront soit apparaître un par un, soit par groupe “Entrée”, “Plat” et “Dessert”. Un exemple de l’effet attendu est fourni._(ok)_
+
 - Le visiteur peut ajouter les plats qu'il souhaite à sa commande en cliquant dessus. Cela fait apparaître une petite coche à droite du plat. Cette coche devra coulisser dela droite vers la gauche. Pour cette première version, l’effet peut apparaître au survolau lieu du clic. Si l’intitulé du plat est trop long, il devra être rogné avec des points de suspension. Un exemple de l’effet attendu est fourni. _(ok)_
 
 ## Statut
