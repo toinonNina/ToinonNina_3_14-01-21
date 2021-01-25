@@ -10,7 +10,9 @@
   z-index: 5;
 
   pointer-events: none; /* retirer toute intéraction au clique sur l'élément*/
-
+  @include mdland {
+    width: 100%;
+  }
   @include xl {
     width: 80%;
   }
