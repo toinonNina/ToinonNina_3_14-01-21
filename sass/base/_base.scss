@@ -5,6 +5,14 @@ body {
   margin: 0;
   font-size: 1em;
   font-family: "Roboto", sans-serif;
+  @include xxl {
+    width: 1280px;
+    margin: auto;
+  }
+  @include xxxl {
+    width: 1280px;
+    margin: auto;
+  }
 }
 a {
   @include link;

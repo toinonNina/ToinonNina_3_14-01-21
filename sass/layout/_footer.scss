@@ -4,6 +4,15 @@ footer {
   background-color: $darkbackground;
   color: $white;
   padding: 10px;
+  @include xl {
+    font-size: 1.1em;
+  }
+  @include xxl {
+    font-size: 1.2em;
+  }
+  @include xxxl {
+    font-size: 1.2em;
+  }
 
   ul {
     list-style: none;
@@ -20,6 +29,15 @@ footer {
     font-family: "Shrikhand", cursive;
     font-size: 15px;
     font-weight: 200;
+    @include xl {
+      font-size: 1.1em;
+    }
+    @include xxl {
+      font-size: 1.2em;
+    }
+    @include xxxl {
+      font-size: 1.3em;
+    }
   }
 
   .fas {

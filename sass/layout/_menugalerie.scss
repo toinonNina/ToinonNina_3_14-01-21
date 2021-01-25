@@ -8,20 +8,75 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    @include lg {
+      flex-direction: row;
+    }
+    @include xl {
+      flex-direction: row;
+    }
+    @include xxl {
+      flex-direction: row;
+    }
+    @include xxxl {
+      flex-direction: row;
+    }
   }
   &__photo {
     @include card;
+    @include lg {
+      margin: auto auto 40px auto;
+      width: 40%;
+    }
+    @include xl {
+      flex-direction: row;
+      margin: auto auto 40px auto;
+      width: 40%;
+    }
+    @include xxl {
+      flex-direction: row;
+      margin: auto auto 40px auto;
+      width: 40%;
+      height: 340px;
+    }
+    @include xxxl {
+      flex-direction: row;
+      margin: auto auto 40px auto;
+      width: 40%;
+      height: 440px;
+    }
   }
 
   &__photo--large {
-    @include photo;
+    @include photo(180px);
+
+    @include xxl {
+      @include photo(260px);
+    }
+    @include xxxl {
+      @include photo(360px);
+    }
   }
 
-  #new {
+  .new {
     @include Btnnew(70%, 70%);
-  }
-  #new1 {
-    @include Btnnew(70%, 70%);
+
+    @include md {
+      @include Btnnew(87%, 70%);
+    }
+
+    @include lg {
+      @include Btnnew(75%, 70%);
+    }
+    @include xl {
+      @include Btnnew(70%, 70%);
+    }
+    @include xxl {
+      @include Btnnew(80%, 70%);
+    }
+    @include xxxl {
+      @include Btnnew(85%, 70%);
+      font-size: 1.4em;
+    }
   }
 
   .text {
