@@ -50,6 +50,21 @@ p {
   pointer-events: none;
   /* retirer toute intéraction au clique sur l'élément*/
 }
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .loader {
+    width: 80%;
+  }
+}
+@media (min-width: 1440px) and (max-width: 2559px) {
+  .loader {
+    width: 90%;
+  }
+}
+@media (min-width: 2560px) {
+  .loader {
+    width: 80%;
+  }
+}
 .loader {
   animation: space_spin 3000ms ease-in-out both;
   /* both pour que l'animation ne reaparait pas*/
@@ -214,7 +229,7 @@ p {
 }
 @media (min-width: 2560px) {
   .icone {
-    left: 46%;
+    left: 43%;
   }
 }
 
@@ -295,7 +310,7 @@ input::placeholder {
 @media (min-width: 2560px) {
   .steps__list li {
     flex: 1;
-    margin: 0 6em 0 6rem;
+    margin: 0 2em 0 1rem;
     position: relative;
   }
 }
