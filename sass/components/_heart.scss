@@ -11,7 +11,7 @@
     margin-left: 25%;
   }
   @include xxxl {
-    margin-left: 30%;
+    margin-left: 28%;
   }
 
   .menu__btn {
@@ -25,6 +25,7 @@
   }
   .fa-heart {
     padding: 0.2em;
+    width: 50%;
   }
 }
 
@@ -38,16 +39,13 @@
 
   animation: progress-heart 1s ease-in-out;
 
-  background-image: linear-gradient(
-    0deg,
-    $color-primaire 0%,
-    $color-secondaire 100%
-  );
-  background-size: auto 0%; /* c'est ce qui fait que le dégradé évolue */
+  background: linear-gradient(0deg, $color-primaire 0%, $color-secondaire 100%);
+
+  background-size: auto; /* c'est ce qui fait que le dégradé évolue */
 
   background-position: bottom;
   background-repeat: no-repeat;
-  -webkit-background-clip: text; /*rognage au text ne fonctionne */
+  -webkit-background-clip: text; /*rognage au text */
   -webkit-text-fill-color: transparent;
   cursor: pointer;
 }
@@ -56,7 +54,7 @@
   from {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-size: 0% 0%;
+    background-size: 100% 0%;
   }
   to {
     -webkit-background-clip: text;
