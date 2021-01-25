@@ -3,8 +3,9 @@
 .input-icon {
   position: relative;
   background-color: $color-grey;
-  z-index: 3;
+  z-index: 2;
 }
+
 .icone {
   position: absolute; /*important*/
   top: 16px;
@@ -14,6 +15,21 @@
   z-index: 1;
   .dark {
     color: black;
+  }
+  @include md {
+    left: 37%;
+  }
+  @include lg {
+    left: 40%;
+  }
+  @include xl {
+    left: 40%;
+  }
+  @include xxl {
+    left: 43%;
+  }
+  @include xxxl {
+    left: 46%;
   }
 }
 input[type="text"] {
@@ -28,5 +44,5 @@ input[type="text"] {
 }
 input::placeholder {
   color: black;
-  font-size: 1.2em;
+  font-size: 1.4em;
 }

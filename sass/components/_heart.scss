@@ -1,8 +1,18 @@
 /*superposition des coeurs*/
-/*.menu__btn1 {
+.menu__btn1 {
   display: inline-flex;
   margin-left: 15%;
   vertical-align: middle;
+
+  @include md {
+    margin-left: 25%;
+  }
+  @include xxl {
+    margin-left: 25%;
+  }
+  @include xxxl {
+    margin-left: 30%;
+  }
 
   .menu__btn {
     margin-top: -15px;
@@ -16,40 +26,62 @@
   .fa-heart {
     padding: 0.2em;
   }
-}*/
+}
 
 /* animation des coeurs en remplissage progressive*/
-/*.fa-heart::before {
+.fa-heart::before {
   content: "\f004";
   position: absolute;
 }
 .fa-heart:hover::before {
   font-weight: bold;
-  animation: progress-bar 1.5s ease-in-out;
+
+  animation: progress-heart 1.5s ease-in-out;
 
   background-image: linear-gradient(
     0deg,
     $color-primaire 0%,
     $color-secondaire 100%
   );
-  background-size: 100% 0%;
+  background-size: auto 0%; /* c'est ce qui fait que le dégradé évolue */
+
   background-position: bottom;
   background-repeat: no-repeat;
-  background-clip: text;
-  -color: transparent;
+  -webkit-background-clip: text; /*rognage au text ne fonctionne */
+  -webkit-text-fill-color: transparent;
   cursor: pointer;
 }
 
-@keyframes progress-bar {
+@keyframes progress-heart {
   from {
-    background-clip: text;
-    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     background-size: 0% 0%;
   }
   to {
-    background-clip: text;
-    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     background-size: 100% 100%;
     color: black;
   }
-}*/
+}
+
+/* --------- coeur menu------------*/
+.menu__btn2 {
+  .fa-heart {
+    font-size: 1.5em;
+    color: black;
+  }
+  .menu__btn {
+    height: 3rem;
+    width: 3rem;
+    margin-top: 25px;
+    position: relative;
+  }
+  .menu__like {
+    background-color: $background;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
