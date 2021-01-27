@@ -98,6 +98,13 @@
     @content;
   }
 }
+
+@mixin xland {
+  @media (min-width: $screen-xl-min) and (max-width: $screen-xl-max) and (orientation: landscape) {
+    @content;
+  }
+}
+
 @mixin xxl {
   @media (min-width: $screen-xxl-min) and (max-width: $screen-xxl-max) {
     @content;
