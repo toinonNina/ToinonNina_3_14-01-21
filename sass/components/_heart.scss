@@ -50,6 +50,14 @@
   cursor: pointer;
 }
 
+.menu__btn:hover {
+  .menu__like {
+    &--noBg {
+      opacity: 0.5;
+    }
+  }
+}
+
 @keyframes progress-heart {
   from {
     -webkit-background-clip: text;
