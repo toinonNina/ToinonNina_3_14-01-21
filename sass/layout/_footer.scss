@@ -4,23 +4,65 @@ footer {
   background-color: $darkbackground;
   color: $white;
   padding: 10px;
+  @include mdland {
+    display: flex;
+  }
+  @include lg {
+    font-size: 1.1em;
+    display: flex;
+  }
   @include xl {
     font-size: 1.1em;
+    display: flex;
   }
   @include xxl {
     font-size: 1.2em;
+    display: flex;
   }
   @include xxxl {
     font-size: 1.2em;
+    display: flex;
   }
 
   ul {
     list-style: none;
     margin-left: 6px;
     padding-left: 0;
+    @include mdland {
+      display: flex;
+    }
+    @include lg {
+      display: flex;
+    }
+    @include xl {
+      display: flex;
+    }
+
+    @include xxl {
+      display: flex;
+    }
+    @include xxxl {
+      display: flex;
+    }
   }
   li {
     margin-bottom: 10px;
+    @include mdland {
+      margin-left: 60px;
+    }
+    @include lg {
+      margin-left: 60px;
+    }
+    @include xl {
+      margin-left: 60px;
+    }
+
+    @include xxl {
+      margin-left: 60px;
+    }
+    @include xxxl {
+      margin-left: 60px;
+    }
   }
   a {
     color: white;
@@ -29,14 +71,23 @@ footer {
     font-family: "Shrikhand", cursive;
     font-size: 15px;
     font-weight: 200;
+
+    @include mdland {
+      font-size: 1.1em;
+      margin-left: 18px;
+    }
     @include xl {
       font-size: 1.1em;
+      margin-left: 91px;
     }
+
     @include xxl {
       font-size: 1.2em;
+      margin-left: 91px;
     }
     @include xxxl {
       font-size: 1.3em;
+      margin-left: 91px;
     }
   }
 
