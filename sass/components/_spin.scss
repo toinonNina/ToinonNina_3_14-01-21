@@ -43,8 +43,9 @@
   border-right-color: $color-tertaire;
   border-radius: 100%;
   @include xxl {
-    margin-right: 15%;
+    margin-right: 30%;
   }
+
   @include xxxl {
     margin-right: 37%;
   }
