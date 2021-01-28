@@ -2,9 +2,6 @@
 
 =======
 
-
-
-
 ## Informations générales
 
 - 1- Développer un site proposant le menu de 4 grands restaurants parisiens.
@@ -46,4 +43,4 @@ Liste des fonctionnalités prêtes et TODO pour le développement futur
 
 ## Statut
 
-Le projet est: _en cours_
+Le projet est: _finis_
