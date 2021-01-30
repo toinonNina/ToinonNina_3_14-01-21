@@ -23,6 +23,10 @@
   }
   &__photo {
     @include card;
+    @include md {
+      margin: 10px auto 30px auto;
+      width: 83%;
+    }
     @include lg {
       margin: auto auto 40px auto;
       width: 40%;
@@ -58,23 +62,23 @@
   }
 
   .new {
-    @include Btnnew(70%, 70%);
+    @include Btnnew(70%);
 
     @include md {
-      @include Btnnew(87%, 70%);
+      @include Btnnew(85%);
     }
 
     @include lg {
-      @include Btnnew(75%, 70%);
+      @include Btnnew(75%);
     }
     @include xl {
-      @include Btnnew(70%, 70%);
+      @include Btnnew(70%);
     }
     @include xxl {
-      @include Btnnew(80%, 70%);
+      @include Btnnew(80%);
     }
     @include xxxl {
-      @include Btnnew(75%, 70%);
+      @include Btnnew(75%);
       font-size: 1.4em;
     }
   }

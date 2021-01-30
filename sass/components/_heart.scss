@@ -37,7 +37,7 @@
 .fa-heart:hover::before {
   font-weight: bold;
 
-  animation: progress-heart 1s ease-in-out;
+  animation: progress-heart 0.8s ease;
 
   background: linear-gradient(0deg, $color-primaire 0%, $color-secondaire 100%);
 
