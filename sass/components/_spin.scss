@@ -9,24 +9,9 @@
   place-items: center center;
   z-index: 5;
   margin: auto;
-
+  left: 0px;
   pointer-events: none; /* retirer toute intéraction au clique sur l'élément*/
-  @include mdland {
-    width: 100%;
-  }
-  @include xl {
-    width: 80%;
-  }
 
-  @include xland {
-    width: 100%;
-  }
-  @include xxl {
-    width: 100%;
-  }
-  @include xxxl {
-    width: 80%;
-  }
   & {
     animation: space_spin 3000ms ease-in-out both; /* both pour que l'animation ne reaparait pas*/
     > .spinner {
@@ -42,13 +27,7 @@
   border-left-color: $color-secondaire;
   border-right-color: $color-tertaire;
   border-radius: 100%;
-  @include xxl {
-    margin-right: 30%;
-  }
-
-  @include xxxl {
-    margin-right: 37%;
-  }
+  margin: auto;
 }
 /* Spinner animation */
 @keyframes spin {

@@ -14,7 +14,7 @@ body {
 }
 @media (min-width: 2560px) {
   body {
-    width: 1280px;
+    width: 1380px;
     margin: auto;
   }
 }
@@ -48,33 +48,9 @@ p {
   place-items: center center;
   z-index: 5;
   margin: auto;
+  left: 0px;
   pointer-events: none;
   /* retirer toute intéraction au clique sur l'élément*/
-}
-@media (min-width: 768px) and (max-width: 1439px) and (orientation: landscape) {
-  .loader {
-    width: 100%;
-  }
-}
-@media (min-width: 1280px) and (max-width: 1439px) {
-  .loader {
-    width: 80%;
-  }
-}
-@media (min-width: 1280px) and (max-width: 1439px) and (orientation: landscape) {
-  .loader {
-    width: 100%;
-  }
-}
-@media (min-width: 1440px) and (max-width: 2559px) {
-  .loader {
-    width: 100%;
-  }
-}
-@media (min-width: 2560px) {
-  .loader {
-    width: 80%;
-  }
 }
 .loader {
   animation: space_spin 3000ms ease-in-out both;
@@ -91,16 +67,7 @@ p {
   border-left-color: #ff79da;
   border-right-color: #99e2d0;
   border-radius: 100%;
-}
-@media (min-width: 1440px) and (max-width: 2559px) {
-  .spinner {
-    margin-right: 30%;
-  }
-}
-@media (min-width: 2560px) {
-  .spinner {
-    margin-right: 37%;
-  }
+  margin: auto;
 }
 
 /* Spinner animation */
@@ -167,7 +134,7 @@ p {
 
 .fa-heart:hover::before {
   font-weight: bold;
-  animation: progress-heart 1s ease-in-out;
+  animation: progress-heart 0.8s ease;
   background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
   background-size: auto;
   /* c'est ce qui fait que le dégradé évolue */
@@ -655,6 +622,12 @@ header .gradient:hover {
   height: 250px;
   box-shadow: 0px 4px 5px 0px #cbcbcb;
 }
+@media (min-width: 768px) and (max-width: 1439px) {
+  .restaurant__photo {
+    margin: 10px auto 30px auto;
+    width: 83%;
+  }
+}
 @media (min-width: 1024px) and (max-width: 1279px) {
   .restaurant__photo {
     margin: auto auto 40px auto;
@@ -724,7 +697,7 @@ header .gradient:hover {
   .restaurant .new {
     position: absolute;
     z-index: 1;
-    left: 87%;
+    left: 85%;
     bottom: 70%;
     background-color: #99e2d0;
     color: #2c9c81;
@@ -966,6 +939,7 @@ footer .fa-utensils {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 20px;
   }
 }
 @media (min-width: 1280px) and (max-width: 1439px) {
@@ -973,6 +947,7 @@ footer .fa-utensils {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 20px;
   }
 }
 @media (min-width: 1440px) and (max-width: 2559px) {
@@ -980,6 +955,7 @@ footer .fa-utensils {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 40px;
   }
 }
 @media (min-width: 2560px) {
@@ -987,7 +963,11 @@ footer .fa-utensils {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 20px;
   }
+}
+#menu__main section .menu-flex .menu-2 {
+  margin-top: 0;
 }
 
 /* ---------- mise en page menu -----------*/
@@ -996,11 +976,19 @@ footer .fa-utensils {
 .desserts {
   padding-bottom: 15px;
 }
+@media (min-width: 768px) and (max-width: 1439px) {
+  .entrees,
+.Plats,
+.desserts {
+    width: 95%;
+    margin: auto;
+  }
+}
 @media (min-width: 1024px) and (max-width: 1279px) {
   .entrees,
 .Plats,
 .desserts {
-    width: 30%;
+    width: 50%;
     margin: auto;
   }
 }
@@ -1056,32 +1044,64 @@ footer .fa-utensils {
   padding-bottom: 5px;
   border-bottom: 3px solid #99e2d0;
 }
-
+@media (min-width: 768px) and (max-width: 1439px) {
+  .entrees h2,
+.Plats h2,
+.desserts h2 {
+    font-size: 1.1em;
+  }
+}
 @media (min-width: 768px) and (max-width: 1439px) and (orientation: landscape) {
-  .menu-2 {
-    margin-top: 0;
+  .entrees h2,
+.Plats h2,
+.desserts h2 {
+    text-align: center;
+    font-size: 1.1em;
   }
 }
 @media (min-width: 1280px) and (max-width: 1439px) {
-  .menu-2 {
-    margin-top: 0;
-  }
-}
-@media (min-width: 1280px) and (max-width: 1439px) and (orientation: landscape) {
-  .menu-2 {
-    margin-top: 0;
+  .entrees h2,
+.Plats h2,
+.desserts h2 {
+    text-align: center;
+    font-size: 1.1em;
   }
 }
 @media (min-width: 1440px) and (max-width: 2559px) {
-  .menu-2 {
-    margin-top: 0;
+  .entrees h2,
+.Plats h2,
+.desserts h2 {
+    text-align: center;
+    font-size: 1.1em;
   }
 }
 @media (min-width: 2560px) {
-  .menu-2 {
-    margin-top: 0;
+  .entrees h2,
+.Plats h2,
+.desserts h2 {
+    text-align: center;
+    font-size: 1.1em;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .menu .namePlat {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 768px) and (max-width: 1439px) and (orientation: landscape) {
+  .menu .price {
+    font-size: 1.2em;
+    padding-top: 42px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+  .menu .price {
+    font-size: 1.2em;
+    padding-top: 38px;
+  }
+}
+
 /* --------- bouton gradient --------*/
 .gradient {
   background: linear-gradient(#ff79da, #9356dc);
@@ -1099,6 +1119,31 @@ footer .fa-utensils {
   background: linear-gradient(rgba(255, 121, 218, 0.8), rgba(147, 86, 220, 0.8));
   box-shadow: 0px 3px 4px 2px #b7b7b7;
   /* durcissement ombre*/
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+  .gradient {
+    font-size: 1.1em;
+  }
+}
+@media (min-width: 768px) and (max-width: 1439px) and (orientation: landscape) {
+  .gradient {
+    font-size: 1.1em;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .gradient {
+    font-size: 1.1em;
+  }
+}
+@media (min-width: 1440px) and (max-width: 2559px) {
+  .gradient {
+    font-size: 1.1em;
+  }
+}
+@media (min-width: 2560px) {
+  .gradient {
+    font-size: 1.1em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
