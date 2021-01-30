@@ -36,13 +36,9 @@
 }
 .fa-heart:hover::before {
   font-weight: bold;
-
   animation: progress-heart 0.8s ease;
-
   background: linear-gradient(0deg, $color-primaire 0%, $color-secondaire 100%);
-
   background-size: auto; /* c'est ce qui fait que le dégradé évolue */
-
   background-position: bottom;
   background-repeat: no-repeat;
   -webkit-background-clip: text; /*rognage au text */
@@ -60,13 +56,9 @@
 
 @keyframes progress-heart {
   from {
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-size: 100% 0%;
   }
   to {
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-size: 100% 100%;
     color: black;
   }

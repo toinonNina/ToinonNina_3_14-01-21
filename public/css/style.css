@@ -91,96 +91,6 @@ p {
     display: none;
   }
 }
-/*superposition des coeurs*/
-.menu__btn1 {
-  display: inline-flex;
-  margin-left: 15%;
-  vertical-align: middle;
-}
-@media (min-width: 768px) and (max-width: 1439px) {
-  .menu__btn1 {
-    margin-left: 25%;
-  }
-}
-@media (min-width: 1440px) and (max-width: 2559px) {
-  .menu__btn1 {
-    margin-left: 25%;
-  }
-}
-@media (min-width: 2560px) {
-  .menu__btn1 {
-    margin-left: 28%;
-  }
-}
-.menu__btn1 .menu__btn {
-  margin-top: -15px;
-  position: relative;
-}
-.menu__btn1 .menu__like {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.menu__btn1 .fa-heart {
-  padding: 0.2em;
-  width: 50%;
-}
-
-/* animation des coeurs en remplissage progressive*/
-.fa-heart::before {
-  content: "";
-  position: absolute;
-}
-
-.fa-heart:hover::before {
-  font-weight: bold;
-  animation: progress-heart 0.8s ease;
-  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
-  background-size: auto;
-  /* c'est ce qui fait que le dégradé évolue */
-  background-position: bottom;
-  background-repeat: no-repeat;
-  -webkit-background-clip: text;
-  /*rognage au text */
-  -webkit-text-fill-color: transparent;
-  cursor: pointer;
-}
-
-.menu__btn:hover .menu__like--noBg {
-  opacity: 0.5;
-}
-
-@keyframes progress-heart {
-  from {
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 100% 0%;
-  }
-  to {
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 100% 100%;
-    color: black;
-  }
-}
-/* --------- coeur menu------------*/
-.menu__btn2 .fa-heart {
-  font-size: 1.5em;
-  color: black;
-}
-.menu__btn2 .menu__btn {
-  height: 3rem;
-  width: 3rem;
-  margin-top: 25px;
-  position: relative;
-}
-.menu__btn2 .menu__like {
-  background-color: #f6f6f6;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 /*---------Champ de saisie ville --------------*/
 .input-icon {
   position: relative;
@@ -394,6 +304,92 @@ input::placeholder {
 }
 .steps__list li:hover .fas {
   color: #9356dc;
+}
+
+/*superposition des coeurs*/
+.menu__btn1 {
+  display: inline-flex;
+  margin-left: 15%;
+  vertical-align: middle;
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+  .menu__btn1 {
+    margin-left: 25%;
+  }
+}
+@media (min-width: 1440px) and (max-width: 2559px) {
+  .menu__btn1 {
+    margin-left: 25%;
+  }
+}
+@media (min-width: 2560px) {
+  .menu__btn1 {
+    margin-left: 28%;
+  }
+}
+.menu__btn1 .menu__btn {
+  margin-top: -15px;
+  position: relative;
+}
+.menu__btn1 .menu__like {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.menu__btn1 .fa-heart {
+  padding: 0.2em;
+  width: 50%;
+}
+
+/* animation des coeurs en remplissage progressive*/
+.fa-heart::before {
+  content: "";
+  position: absolute;
+}
+
+.fa-heart:hover::before {
+  font-weight: bold;
+  animation: progress-heart 0.8s ease;
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  background-size: auto;
+  /* c'est ce qui fait que le dégradé évolue */
+  background-position: bottom;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  /*rognage au text */
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+.menu__btn:hover .menu__like--noBg {
+  opacity: 0.5;
+}
+
+@keyframes progress-heart {
+  from {
+    background-size: 100% 0%;
+  }
+  to {
+    background-size: 100% 100%;
+    color: black;
+  }
+}
+/* --------- coeur menu------------*/
+.menu__btn2 .fa-heart {
+  font-size: 1.5em;
+  color: black;
+}
+.menu__btn2 .menu__btn {
+  height: 3rem;
+  width: 3rem;
+  margin-top: 25px;
+  position: relative;
+}
+.menu__btn2 .menu__like {
+  background-color: #f6f6f6;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /* animation menus */
