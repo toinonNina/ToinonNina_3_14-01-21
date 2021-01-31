@@ -17,6 +17,15 @@
   .menu__btn {
     margin-top: -15px;
     position: relative;
+    @include xl {
+      margin-left: -25px;
+    }
+    @include xxl {
+      margin-left: -25px;
+    }
+    @include xxxl {
+      margin-left: -25px;
+    }
   }
   .menu__like {
     position: absolute;

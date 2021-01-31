@@ -14,7 +14,13 @@
   box-shadow: 0px 3px 4px 2px darken($color-grey, 10%);
   cursor: pointer;
 }
-
+@mixin hovergradient {
+  background: linear-gradient(
+    rgba(255, 121, 218, 0.8),
+    rgba(147, 86, 220, 0.8)
+  ); /*éclaircissement couleur*/
+  box-shadow: 0px 3px 4px 2px darken($color-grey, 20%); /* durcissement ombre*/
+}
 @mixin card {
   background-color: $white;
   border-radius: 15px;

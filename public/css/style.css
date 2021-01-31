@@ -8,13 +8,13 @@ body {
 }
 @media (min-width: 1440px) and (max-width: 2559px) {
   body {
-    width: 1280px;
+    width: 1380px;
     margin: auto;
   }
 }
 @media (min-width: 2560px) {
   body {
-    width: 1380px;
+    width: 1680px;
     margin: auto;
   }
 }
@@ -331,6 +331,21 @@ input::placeholder {
   margin-top: -15px;
   position: relative;
 }
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .menu__btn1 .menu__btn {
+    margin-left: -25px;
+  }
+}
+@media (min-width: 1440px) and (max-width: 2559px) {
+  .menu__btn1 .menu__btn {
+    margin-left: -25px;
+  }
+}
+@media (min-width: 2560px) {
+  .menu__btn1 .menu__btn {
+    margin-left: -25px;
+  }
+}
 .menu__btn1 .menu__like {
   position: absolute;
   top: 0;
@@ -513,11 +528,6 @@ header {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 2560px) {
-  header {
-    font-size: 1.3em;
-  }
-}
 header .return {
   position: absolute;
   top: 30px;
@@ -570,7 +580,7 @@ header .gradient {
   box-shadow: 0px 3px 4px 2px #d1d1d1;
   cursor: pointer;
   transition-duration: 0.25s;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 header .gradient:hover {
   background: linear-gradient(rgba(255, 121, 218, 0.8), rgba(147, 86, 220, 0.8));
@@ -634,23 +644,24 @@ header .gradient:hover {
   .restaurant__photo {
     flex-direction: row;
     margin: auto auto 40px auto;
-    width: 40%;
+    width: 21%;
+    height: 267px;
   }
 }
 @media (min-width: 1440px) and (max-width: 2559px) {
   .restaurant__photo {
     flex-direction: row;
     margin: auto auto 40px auto;
-    width: 40%;
-    height: 340px;
+    width: 21%;
+    height: 267px;
   }
 }
 @media (min-width: 2560px) {
   .restaurant__photo {
     flex-direction: row;
     margin: auto auto 40px auto;
-    width: 40%;
-    height: 440px;
+    width: 21%;
+    height: 267px;
   }
 }
 .restaurant__photo--large {
@@ -663,7 +674,7 @@ header .gradient:hover {
 @media (min-width: 1440px) and (max-width: 2559px) {
   .restaurant__photo--large {
     object-fit: cover;
-    height: 260px;
+    height: 201px;
     width: 100%;
     border-radius: 15px 15px 0px 0px;
     position: relative;
@@ -672,7 +683,7 @@ header .gradient:hover {
 @media (min-width: 2560px) {
   .restaurant__photo--large {
     object-fit: cover;
-    height: 360px;
+    height: 201px;
     width: 100%;
     border-radius: 15px 15px 0px 0px;
     position: relative;
@@ -719,7 +730,7 @@ header .gradient:hover {
   .restaurant .new {
     position: absolute;
     z-index: 1;
-    left: 70%;
+    left: 67%;
     bottom: 70%;
     background-color: #99e2d0;
     color: #2c9c81;
@@ -732,7 +743,7 @@ header .gradient:hover {
   .restaurant .new {
     position: absolute;
     z-index: 1;
-    left: 80%;
+    left: 67%;
     bottom: 70%;
     background-color: #99e2d0;
     color: #2c9c81;
@@ -745,7 +756,7 @@ header .gradient:hover {
   .restaurant .new {
     position: absolute;
     z-index: 1;
-    left: 75%;
+    left: 67%;
     bottom: 70%;
     background-color: #99e2d0;
     color: #2c9c81;
@@ -827,11 +838,13 @@ footer ul {
 @media (min-width: 1440px) and (max-width: 2559px) {
   footer ul {
     display: flex;
+    margin-left: 47px;
   }
 }
 @media (min-width: 2560px) {
   footer ul {
     display: flex;
+    margin-left: 49px;
   }
 }
 footer li {
@@ -854,16 +867,17 @@ footer li {
 }
 @media (min-width: 1440px) and (max-width: 2559px) {
   footer li {
-    margin-left: 60px;
+    margin-left: 75px;
   }
 }
 @media (min-width: 2560px) {
   footer li {
-    margin-left: 60px;
+    margin-left: 144px;
   }
 }
 footer a {
   color: white;
+  font-style: normal;
 }
 footer h2 {
   font-family: "Shrikhand", cursive;
@@ -1110,30 +1124,27 @@ footer .fa-utensils {
   padding: 15px 35px;
   display: flex;
   margin: auto;
+  transition-duration: 0.25s;
 }
 .gradient:hover {
   background: linear-gradient(rgba(255, 121, 218, 0.8), rgba(147, 86, 220, 0.8));
+  /*éclaircissement couleur*/
   box-shadow: 0px 3px 4px 2px #b7b7b7;
   /* durcissement ombre*/
 }
 @media (min-width: 768px) and (max-width: 1439px) {
   .gradient {
-    font-size: 1.1em;
+    font-size: 1em;
   }
 }
 @media (min-width: 768px) and (max-width: 1439px) and (orientation: landscape) {
   .gradient {
-    font-size: 1.1em;
-  }
-}
-@media (min-width: 1280px) and (max-width: 1439px) {
-  .gradient {
-    font-size: 1.1em;
+    font-size: 1em;
   }
 }
 @media (min-width: 1440px) and (max-width: 2559px) {
   .gradient {
-    font-size: 1.1em;
+    font-size: 1em;
   }
 }
 @media (min-width: 2560px) {
