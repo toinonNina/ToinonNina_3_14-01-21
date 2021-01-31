@@ -4,6 +4,7 @@ footer {
   background-color: $darkbackground;
   color: $white;
   padding: 10px;
+
   @include mdland {
     display: flex;
   }
@@ -40,9 +41,11 @@ footer {
 
     @include xxl {
       display: flex;
+      margin-left: 47px;
     }
     @include xxxl {
       display: flex;
+      margin-left: 49px;
     }
   }
   li {
@@ -58,14 +61,15 @@ footer {
     }
 
     @include xxl {
-      margin-left: 60px;
+      margin-left: 75px;
     }
     @include xxxl {
-      margin-left: 60px;
+      margin-left: 144px;
     }
   }
   a {
     color: white;
+    font-style: normal;
   }
   h2 {
     font-family: "Shrikhand", cursive;

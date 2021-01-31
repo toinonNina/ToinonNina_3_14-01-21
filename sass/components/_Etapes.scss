@@ -83,7 +83,7 @@
       background: $color-primaire;
       border-radius: 60px;
       font-size: 0.8em;
-      color: white;
+      color: $white;
       position: absolute;
       left: 10px;
       z-index: 2;
@@ -96,19 +96,16 @@
       @include lg {
         padding: 5px 14px 5px;
         font-size: 1.2em;
-
         left: -6%;
       }
       @include xl {
         padding: 5px 13px 5px;
         font-size: 1.3em;
-
         left: -6%;
       }
       @include xxl {
         padding: 5px 13px 5px;
         font-size: 1.4em;
-
         left: -6%;
       }
       @include xxxl {
@@ -121,7 +118,6 @@
     li:hover {
       background-color: lighten($color-primaire, $amount: 35);
       box-shadow: 2px 4px 8px 0px darken($color-grey, 10%);
-
       .fas {
         color: $color-primaire;
       }

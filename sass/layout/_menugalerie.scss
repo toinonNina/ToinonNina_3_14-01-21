@@ -34,19 +34,20 @@
     @include xl {
       flex-direction: row;
       margin: auto auto 40px auto;
-      width: 40%;
+      width: 21%;
+      height: 267px;
     }
     @include xxl {
       flex-direction: row;
       margin: auto auto 40px auto;
-      width: 40%;
-      height: 340px;
+      width: 21%;
+      height: 267px;
     }
     @include xxxl {
       flex-direction: row;
       margin: auto auto 40px auto;
-      width: 40%;
-      height: 440px;
+      width: 21%;
+      height: 267px;
     }
   }
 
@@ -54,10 +55,10 @@
     @include photo(180px);
 
     @include xxl {
-      @include photo(260px);
+      @include photo(201px);
     }
     @include xxxl {
-      @include photo(360px);
+      @include photo(201px);
     }
   }
 
@@ -72,13 +73,13 @@
       @include Btnnew(75%);
     }
     @include xl {
-      @include Btnnew(70%);
+      @include Btnnew(67%);
     }
     @include xxl {
-      @include Btnnew(80%);
+      @include Btnnew(67%);
     }
     @include xxxl {
-      @include Btnnew(75%);
+      @include Btnnew(67%);
       font-size: 1.4em;
     }
   }

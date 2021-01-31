@@ -4,10 +4,6 @@ header {
   display: flex;
   flex-direction: column;
 
-  @include xxxl {
-    font-size: 1.3em;
-  }
-
   .return {
     position: absolute;
     top: 30px;
@@ -52,14 +48,10 @@ header {
   .gradient {
     @include gradient;
     transition-duration: 0.25s;
-    font-size: 1.1em;
+    font-size: 1em;
 
     &:hover {
-      background: linear-gradient(
-        rgba(255, 121, 218, 0.8),
-        rgba(147, 86, 220, 0.8)
-      ); /*éclaircissement couleur*/
-      box-shadow: 0px 3px 4px 2px darken($color-grey, 20%); /* durcissement ombre*/
+      @include hovergradient;
     }
   }
 }

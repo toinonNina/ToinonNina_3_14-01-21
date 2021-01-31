@@ -6,11 +6,11 @@ body {
   font-size: 1em;
   font-family: "Roboto", sans-serif;
   @include xxl {
-    width: 1280px;
+    width: 1380px;
     margin: auto;
   }
   @include xxxl {
-    width: 1380px;
+    width: 1680px;
     margin: auto;
   }
 }
