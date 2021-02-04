@@ -377,7 +377,7 @@ input::placeholder {
 }
 
 .menu__btn:hover .menu__like--noBg {
-  opacity: 0.5;
+  opacity: 1;
 }
 
 @keyframes progress-heart {
@@ -692,77 +692,16 @@ header .gradient:hover {
 .restaurant .new {
   position: absolute;
   z-index: 1;
-  left: 70%;
-  bottom: 70%;
+  right: 10px;
+  top: 10px;
   background-color: #99e2d0;
   color: #2c9c81;
   border: 0;
   padding: 5px 10px;
   font-weight: 600;
 }
-@media (min-width: 768px) and (max-width: 1439px) {
-  .restaurant .new {
-    position: absolute;
-    z-index: 1;
-    left: 85%;
-    bottom: 70%;
-    background-color: #99e2d0;
-    color: #2c9c81;
-    border: 0;
-    padding: 5px 10px;
-    font-weight: 600;
-  }
-}
-@media (min-width: 1024px) and (max-width: 1279px) {
-  .restaurant .new {
-    position: absolute;
-    z-index: 1;
-    left: 75%;
-    bottom: 70%;
-    background-color: #99e2d0;
-    color: #2c9c81;
-    border: 0;
-    padding: 5px 10px;
-    font-weight: 600;
-  }
-}
-@media (min-width: 1280px) and (max-width: 1439px) {
-  .restaurant .new {
-    position: absolute;
-    z-index: 1;
-    left: 67%;
-    bottom: 70%;
-    background-color: #99e2d0;
-    color: #2c9c81;
-    border: 0;
-    padding: 5px 10px;
-    font-weight: 600;
-  }
-}
-@media (min-width: 1440px) and (max-width: 2559px) {
-  .restaurant .new {
-    position: absolute;
-    z-index: 1;
-    left: 67%;
-    bottom: 70%;
-    background-color: #99e2d0;
-    color: #2c9c81;
-    border: 0;
-    padding: 5px 10px;
-    font-weight: 600;
-  }
-}
 @media (min-width: 2560px) {
   .restaurant .new {
-    position: absolute;
-    z-index: 1;
-    left: 67%;
-    bottom: 70%;
-    background-color: #99e2d0;
-    color: #2c9c81;
-    border: 0;
-    padding: 5px 10px;
-    font-weight: 600;
     font-size: 1.4em;
   }
 }

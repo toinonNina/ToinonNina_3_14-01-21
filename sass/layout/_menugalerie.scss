@@ -63,23 +63,9 @@
   }
 
   .new {
-    @include Btnnew(70%);
+    @include Btnnew;
 
-    @include md {
-      @include Btnnew(85%);
-    }
-
-    @include lg {
-      @include Btnnew(75%);
-    }
-    @include xl {
-      @include Btnnew(67%);
-    }
-    @include xxl {
-      @include Btnnew(67%);
-    }
     @include xxxl {
-      @include Btnnew(67%);
       font-size: 1.4em;
     }
   }
