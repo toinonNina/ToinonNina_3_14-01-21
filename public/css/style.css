@@ -440,8 +440,8 @@ input::placeholder {
 .box .check {
   margin: auto;
   border-radius: 50%;
-  transition: transform 1s;
-  transform: rotate(180deg);
+  transition: transform 0.7s;
+  transform: rotate(360deg);
 }
 .box .check .fa-check-circle {
   color: white;
